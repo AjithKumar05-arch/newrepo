@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #eef6ee;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Banner Styling */
+.banner {
+  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.15); /* lighter overlay for readable text */
+  z-index: 1;
+}
+
+.banner-text {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.banner-text h1, 
+.banner-text p {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); /* makes text pop */
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.banner-text p {
+  margin: 5px 0 0 0;
+  font-size: 1.2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+textarea, input[type="file"], button {
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+}
+
+button {
+  background-color: #3b7a57;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #2f5f44;
+}
+
+.report-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  background: #f9f9f9;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Upvote Button Styling */
+.upvote-btn {
+  background-color: #f2a33c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+
+.upvote-btn:hover {
+  background-color: #d8871f;
+}
+
+.upvote-count {
+  margin-left: 10px;
+  font-weight: bold;
+}

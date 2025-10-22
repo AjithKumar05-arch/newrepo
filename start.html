@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoSupport</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <div class="banner-text">
+        <h1>🌿 EcoSupport</h1>
+        <p>Report garbage or hazardous waste in your area — help keep your city clean!</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="report-form">
+      <h2>Submit a Report</h2>
+      <form id="reportForm">
+        <label for="photo">Upload a Photo:</label>
+        <input type="file" id="photo" accept="image/*" required>
+
+        <label for="description">Description:</label>
+        <textarea id="description" placeholder="Describe the issue..." required></textarea>
+
+        <button type="button" id="getLocationBtn">📍 Detect My Location</button>
+        <p id="locationDisplay">Location: Not detected yet</p>
+
+        <div id="map"></div>
+
+        <button type="submit">Submit Report</button>
+      </form>
+    </section>
+
+    <section class="report-list">
+      <h2>Submitted Reports</h2>
+      <div id="reportsContainer"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtV4Jz32bfVeOniZP3HeIUQ-euRtzClc4&callback=initMap"></script>
+</body>
+</html>
