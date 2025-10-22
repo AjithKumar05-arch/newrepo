@@ -1,1 +1,2 @@
-This is my first website designed to learn and grow.
+
+Hi this is my first website. I welcome you.
